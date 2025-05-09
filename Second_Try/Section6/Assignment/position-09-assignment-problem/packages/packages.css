@@ -18,17 +18,6 @@ main {
     position: relative;
 }
 
-.package__badge {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    font-size: 12px;
-    color: white;
-    background: #ff5454;
-    padding: 8px;
-}
-
 .package:hover,
 .package:active {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -41,6 +30,18 @@ main {
     color: inherit;
     display: block;
     padding: 32px;
+}
+
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 8px;
+    z-index: 10;
 }
 
 .package__subtitle {
@@ -61,6 +62,7 @@ main {
 
 #plus {
     background: rgba(213, 255, 220, 0.95);
+    position: relative;
 }
 
 #free {
